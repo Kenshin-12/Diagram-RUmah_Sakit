@@ -1,0 +1,168 @@
+<mxfile host="app.diagrams.net" modified="2025-05-21T07:30:00Z" agent="Mozilla/5.0" version="23.1.3" etag="XzXJQJZ7JjVvJkq4fzQ0" type="device">
+  <diagram name="Normalisasi Database" id="XG_9J8JXaFJN5TgOWy6R">
+    <mxGraphModel dx="1426" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- 1NF -->
+        <mxCell id="group1" value="1NF" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="700" height="400" />
+        </mxCell>
+        
+        <!-- Tabel Pasien 1NF -->
+        <mxCell id="table1" value="Pasien" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d5e8d4;strokeColor=#82b366;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;" vertex="1" parent="group1">
+          <mxGeometry y="30" width="200" height="156" />
+        </mxCell>
+        <mxCell id="field1" value="<b>NoPasien</b> (PK)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="table1">
+          <mxGeometry y="26" width="200" height="26" />
+        </mxCell>
+        <mxCell id="field2" value="NOPEN" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="table1">
+          <mxGeometry y="52" width="200" height="26" />
+        </mxCell>
+        <mxCell id="field3" value="Nama" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="table1">
+          <mxGeometry y="78" width="200" height="26" />
+        </mxCell>
+        <mxCell id="field4" value="Jalan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="table1">
+          <mxGeometry y="104" width="200" height="26" />
+        </mxCell>
+        <mxCell id="field5" value="Kecamatan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="table1">
+          <mxGeometry y="130" width="200" height="26" />
+        </mxCell>
+        
+        <!-- Tabel RekamMedis 1NF -->
+        <mxCell id="table2" value="RekamMedis" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#dae8fc;strokeColor=#6c8ebf;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;" vertex="1" parent="group1">
+          <mxGeometry x="220" y="30" width="220" height="182" />
+        </mxCell>
+        <mxCell id="field6" value="<b>NORM</b> (PK)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="table2">
+          <mxGeometry y="26" width="220" height="26" />
+        </mxCell>
+        <mxCell id="field7" value="NoPasien (FK)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="table2">
+          <mxGeometry y="52" width="220" height="26" />
+        </mxCell>
+        <mxCell id="field8" value="TglPeriksa" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="table2">
+          <mxGeometry y="78" width="220" height="26" />
+        </mxCell>
+        <mxCell id="field9" value="KodeDokter" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="table2">
+          <mxGeometry y="104" width="220" height="26" />
+        </mxCell>
+        <mxCell id="field10" value="NamaDokter" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="table2">
+          <mxGeometry y="130" width="220" height="26" />
+        </mxCell>
+        <mxCell id="field11" value="KodeSakit" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="table2">
+          <mxGeometry y="156" width="220" height="26" />
+        </mxCell>
+        
+        <!-- Tabel DetailObat 1NF -->
+        <mxCell id="table3" value="DetailObat" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#fff2cc;strokeColor=#d6b656;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;" vertex="1" parent="group1">
+          <mxGeometry x="460" y="30" width="200" height="130" />
+        </mxCell>
+        <mxCell id="field12" value="<b>ID</b> (PK)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="table3">
+          <mxGeometry y="26" width="200" height="26" />
+        </mxCell>
+        <mxCell id="field13" value="NORM (FK)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="table3">
+          <mxGeometry y="52" width="200" height="26" />
+        </mxCell>
+        <mxCell id="field14" value="KodeObat" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="table3">
+          <mxGeometry y="78" width="200" height="26" />
+        </mxCell>
+        <mxCell id="field15" value="Dosis" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="table3">
+          <mxGeometry y="104" width="200" height="26" />
+        </mxCell>
+        
+        <!-- Relasi 1NF -->
+        <mxCell id="rel1" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="group1" source="table1" target="table2">
+          <mxGeometry relative="1" />
+        </mxCell>
+        <mxCell id="rel2" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="group1" source="table2" target="table3">
+          <mxGeometry relative="1" />
+        </mxCell>
+        
+        <!-- 2NF -->
+        <mxCell id="group2" value="2NF" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="460" width="700" height="500" />
+        </mxCell>
+        
+        <!-- Tabel Pasien 2NF (sama dengan 1NF) -->
+        <mxCell id="table1_2nf" value="Pasien" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d5e8d4;strokeColor=#82b366;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;" vertex="1" parent="group2">
+          <mxGeometry y="30" width="200" height="156" />
+        </mxCell>
+        <mxCell id="field1_2nf" value="<b>NoPasien</b> (PK)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="table1_2nf">
+          <mxGeometry y="26" width="200" height="26" />
+        </mxCell>
+        <!-- ... (field lainnya sama dengan 1NF) ... -->
+        
+        <!-- Tabel RekamMedis 2NF -->
+        <mxCell id="table2_2nf" value="RekamMedis" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#dae8fc;strokeColor=#6c8ebf;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;" vertex="1" parent="group2">
+          <mxGeometry x="220" y="30" width="200" height="104" />
+        </mxCell>
+        <mxCell id="field6_2nf" value="<b>NORM</b> (PK)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="table2_2nf">
+          <mxGeometry y="26" width="200" height="26" />
+        </mxCell>
+        <mxCell id="field7_2nf" value="NoPasien (FK)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="table2_2nf">
+          <mxGeometry y="52" width="200" height="26" />
+        </mxCell>
+        <mxCell id="field8_2nf" value="TglPeriksa" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="table2_2nf">
+          <mxGeometry y="78" width="200" height="26" />
+        </mxCell>
+        
+        <!-- Tabel Dokter 2NF -->
+        <mxCell id="table3_2nf" value="Dokter" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e1d5e7;strokeColor=#9673a6;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;" vertex="1" parent="group2">
+          <mxGeometry x="440" y="30" width="200" height="78" />
+        </mxCell>
+        <mxCell id="field9_2nf" value="<b>KodeDokter</b> (PK)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="table3_2nf">
+          <mxGeometry y="26" width="200" height="26" />
+        </mxCell>
+        <mxCell id="field10_2nf" value="NamaDokter" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="table3_2nf">
+          <mxGeometry y="52" width="200" height="26" />
+        </mxCell>
+        
+        <!-- ... (lanjutkan dengan tabel Diagnosa, Obat, dan Resep) ... -->
+        
+        <!-- 3NF -->
+        <mxCell id="group3" value="3NF" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="980" width="700" height="500" />
+        </mxCell>
+        
+        <!-- Tabel Pasien 3NF -->
+        <mxCell id="table1_3nf" value="Pasien" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d5e8d4;strokeColor=#82b366;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;" vertex="1" parent="group3">
+          <mxGeometry y="30" width="200" height="130" />
+        </mxCell>
+        <mxCell id="field1_3nf" value="<b>NoPasien</b> (PK)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="table1_3nf">
+          <mxGeometry y="26" width="200" height="26" />
+        </mxCell>
+        <mxCell id="field2_3nf" value="NOPEN" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="table1_3nf">
+          <mxGeometry y="52" width="200" height="26" />
+        </mxCell>
+        <mxCell id="field3_3nf" value="Nama" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="table1_3nf">
+          <mxGeometry y="78" width="200" height="26" />
+        </mxCell>
+        <mxCell id="field4_3nf" value="AlamatID (FK)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="table1_3nf">
+          <mxGeometry y="104" width="200" height="26" />
+        </mxCell>
+        
+        <!-- Tabel Alamat 3NF -->
+        <mxCell id="table2_3nf" value="Alamat" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#f8cecc;strokeColor=#b85450;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;" vertex="1" parent="group3">
+          <mxGeometry x="220" y="30" width="200" height="156" />
+        </mxCell>
+        <mxCell id="field5_3nf" value="<b>AlamatID</b> (PK)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="table2_3nf">
+          <mxGeometry y="26" width="200" height="26" />
+        </mxCell>
+        <mxCell id="field6_3nf" value="Jalan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="table2_3nf">
+          <mxGeometry y="52" width="200" height="26" />
+        </mxCell>
+        <mxCell id="field7_3nf" value="Kecamatan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="table2_3nf">
+          <mxGeometry y="78" width="200" height="26" />
+        </mxCell>
+        <mxCell id="field8_3nf" value="Kelurahan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="table2_3nf">
+          <mxGeometry y="104" width="200" height="26" />
+        </mxCell>
+        <mxCell id="field9_3nf" value="KodePos" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="table2_3nf">
+          <mxGeometry y="130" width="200" height="26" />
+        </mxCell>
+        
+        <!-- ... (lanjutkan dengan tabel lainnya untuk 3NF) ... -->
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
